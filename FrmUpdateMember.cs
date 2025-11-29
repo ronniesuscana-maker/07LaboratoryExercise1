@@ -24,19 +24,17 @@ namespace _07LaboratoryExercise
 
         private void FrmUpdateMember_Load(object sender, EventArgs e)
         {
-            clubRegistrationQuery.IdSelect(cbStudentID);
+            c
         }
 
         private void cbStudentID_SelectedIndexChanged(object sender, EventArgs e)
         {
-            clubRegistrationQuery.AutoSearch(txtFirstName, txtMiddleName, txtLastName, txtAge, cbGender, cbProgram, Convert.ToInt32(cbStudentID.Text));
+           
         }
 
         private void btnConfirm_Click(object sender, EventArgs e)
         {
-            clubRegistrationQuery.UpdateStudent(Convert.ToInt32(cbStudentID.Text), txtFirstName.Text, txtLastName.Text, txtMiddleName.Text, Convert.ToInt32(txtAge.Text), cbGender.Text, cbProgram.Text);
-            FrmClubRegistration frmClubRegistration = new FrmClubRegistration();
-            frmClubRegistration.RefreshListOfClubMembers();
+           
         }
     }
 }
